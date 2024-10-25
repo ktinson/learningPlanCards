@@ -1,0 +1,40 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "options": {
+    "allowedHosts": [
+      "localhost",
+      "http://learningplan-k-tinson-main.onrender.com",
+      "https://learningplan-k-tinson-main.onrender.com",
+      "http://learningplan-k-tinson.onrender.com",
+      "https://learningplan-k-tinson.onrender.com"
+    ],
+    "proxy": "https://learningplan-k-tinson.onrender.com"
+  },
+  "type": "module",
+  "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@mui/material": "^6.1.4",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.21.4",
+    "bootstrap": "^4.6.2",
+    "dotenv": "^16.4.5",
+    "process": "^0.11.10",
+    "react": "^18.3.1",
+    "react-bootstrap": "^2.10.5",
+    "react-dom": "^18.3.1",
+    "react-scripts": "5.0.1",
+    "reactstrap": "^8.9.0",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "set PORT=3000 && node --max-old-space-size=10240 && node_modules/.bin/react-scripts start",
+    "build": "node --max-old-space-size=4096 && set PORT=3000 && node_modules/.bin/react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  }
+}
